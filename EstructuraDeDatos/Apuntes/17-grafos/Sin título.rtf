@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue38;\red32\green32\blue32;\red254\green187\blue91;
+\red153\green168\blue186;\red88\green118\blue71;\red225\green179\blue88;\red86\green132\blue173;\red133\green96\blue154;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c99608\c73333\c35686;
+\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c88235\c70196\c34510;\csgenericrgb\c33725\c51765\c67843;\csgenericrgb\c52157\c37647\c60392;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 \cb3 function 
+\f1\b0 \cf4 contadorTodosEtiquetas\cf5 (inputCheckEtiquetas) \{\
+    
+\f0\b \cf2 const 
+\f1\b0 \cf5 liAgrupadores = $(\cf6 ".\cf7 liAgrupador\cf6 "\cf5 )\cf2 ;\
+\
+    
+\f0\b for 
+\f1\b0 \cf5 ( 
+\f0\b \cf2 let 
+\f1\b0 \cf5 i = \cf8 0\cf2 ; \cf5 i < liAgrupadores.\cf9 length\cf2 ; \cf5 i++ ) \{\
+        
+\f0\b \cf2 if
+\f1\b0 \cf5 ( liAgrupadores[i].\cf9 dataset\cf5 [\cf6 "id"\cf5 ] == inputCheckEtiquetas[\cf8 0\cf5 ].\cf9 dataset\cf5 [\cf6 "agrupador"\cf5 ] ) \{\
+            $(liAgrupadores[i]).\cf4 find\cf5 (\cf6 "span"\cf5 ).\cf4 text\cf5 (inputCheckEtiquetas.\cf9 length \cf5 + \cf6 "/"\cf5 )\cf2 ;\
+            
+\f0\b break
+\f1\b0 ;\
+        \cf5 \}\
+    \}\
+\}\
+\
+\
+\
+Se requiere acumular 100 puntos en valores de respuestas.\
+\
+\
+Maquillaje liquido\
+Labiales\
+Sombras\
+Brillos\
+Lapiz para cejas\
+Lapiz para ojos\
+Agua mineral\
+\
+}

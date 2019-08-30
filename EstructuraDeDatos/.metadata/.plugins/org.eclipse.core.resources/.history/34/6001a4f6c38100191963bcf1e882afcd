@@ -1,0 +1,129 @@
+public class AlgoritmosDeOrdenamiento {
+	int elementoTemporal;
+	
+	// Método burbuja
+	public void metodoBurbuja( int[] arreglo ) {
+		for( int i = 0; i < arreglo.length; i++ ) {
+			for( int j = i + 1; j < arreglo.length; j++ ) {
+				if( arreglo[i] > arreglo[j] ) {
+					elementoTemporal = arreglo[i];
+					arreglo[i] = arreglo[j];
+					arreglo[j] = elementoTemporal;
+				}
+			}
+		}
+	}
+	
+	// Metodo radix
+	public void metodoRadix( int[] arreglo ) {
+		int j;
+		for( int x = Integer.SIZE - 1; x >= 0; x-- ) {
+			int auxiliar[] = new int[arreglo.length];
+			j = 0;
+			for( int i = 0; i < arreglo.length; i++ ) {
+				boolean mover = arreglo[i] << x >= 0;
+				if( x== 0 ? !mover: mover ) {
+					auxiliar[j] = arreglo[i];
+					j++;
+				} else {
+					arreglo[i-j] = arreglo[i];
+				}
+			}
+			
+			for( int i = j; i < auxiliar.length; i++ ) {
+				auxiliar[i] = arreglo[i - j];
+			}
+			arreglo = auxiliar;
+		}
+		System.out.println("Arreglo ordenado por el método Radix:");
+		mostrarArreglo(arreglo);
+	}
+	
+	// Método quick sort
+	public void metodoQuickSort( int[] arreglo, int primero, int ultimo ) {
+		int indicePrimero = primero,
+			indiceUltimo = ultimo,
+			pivote = arreglo[(primero + ultimo) / 2], 
+			auxiliar;
+		
+		do {
+			while( arreglo[indicePrimero] < pivote ) {
+				indicePrimero++;
+			}
+			while( arreglo[indiceUltimo] > pivote ) {
+				indiceUltimo--;
+			}
+			
+			// Aqui hacermos el intercambio
+			if( indicePrimero <= indiceUltimo ) {
+				auxiliar = arreglo[indicePrimero];
+				arreglo[indicePrimero] = arreglo[indiceUltimo];
+				arreglo[indiceUltimo] = auxiliar;
+				indicePrimero++;
+				indiceUltimo--;
+			}
+		} while( indicePrimero <= indiceUltimo );
+		
+		if( primero < indiceUltimo ) {
+			metodoQuickSort(arreglo, primero, indiceUltimo);
+		}
+		
+		if( indicePrimero < ultimo ) {
+			metodoQuickSort(arreglo, indicePrimero, ultimo);
+		}
+	}
+	
+	// Método por inserccion
+	public void metodoInserccion( int[] arreglo, int n ) {
+		int i, j, auxiliar;
+		for( i = 1; i < n; i++ ) {
+			auxiliar = arreglo[i];
+			j = i -1;
+			while( j >= 0 && arreglo[j] > auxiliar ) {
+				arreglo[j + 1] = arreglo[j];
+				j--;
+			}
+			arreglo[j + 1] = auxiliar;
+		}
+		System.out.println("Arreglo ordenado por insercción");
+		mostrarArreglo(arreglo);
+	}
+	
+	// Método shell
+	public void metodoShell( int[] arreglo ) {
+		int salto, auxiliar,
+		j, k;
+		salto = arreglo.length / 2;
+		
+		while( salto > 0 ) {
+			for( int i = salto; i < arreglo.length; i++ ) {
+				j = i - salto;
+				
+				while( j >= 0 ) {
+					k = j + salto;
+					if( arreglo[j] <= arreglo[k] ) {
+						j = -1;
+					} else {
+						auxiliar = arreglo[j];
+						arreglo[j] = arreglo[k];
+						arreglo[k] = auxiliar;
+						j-= salto;
+					}
+				}
+			}
+			salto = salto / 2;
+		}
+		
+		System.out.println("Ordenado con shell:");
+		mostrarArreglo(arreglo);
+	}
+	
+	// Mostrar los arreglos del vector
+	public void mostrarArreglo( int[] arreglo ) {
+		for( int i = 0;  i < arreglo.length; i++ ) {
+			System.out.print("[" + arreglo[i] + "] ==> ");
+		}
+		
+		System.out.println();
+	}
+}

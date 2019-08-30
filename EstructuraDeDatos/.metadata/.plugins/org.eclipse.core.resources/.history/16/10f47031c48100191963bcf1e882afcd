@@ -1,0 +1,31 @@
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		AlgoritmosDeOrdenamiento ordenar = new AlgoritmosDeOrdenamiento();
+		int vector[] = {1000};
+		
+		System.out.println("Los datos sin ordenamiento: ");
+		ordenar.mostrarArreglo(vector);
+		System.out.println("Arreglo ordenado con el método de burbuja:");
+		ordenar.metodoBurbuja(vector);
+		ordenar.mostrarArreglo(vector);
+		ordenar.metodoRadix(vector);
+		System.out.println("Arreglo ordenado por el metodo quick sort");
+		ordenar.metodoQuickSort(vector, 0, vector.length - 1);
+		ordenar.mostrarArreglo(vector);
+		int tamanio;
+		/*tamanio = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el tamaño del arreglo"));
+		int vector2[] = new int[tamanio];
+		
+		for( int i = 0; i < vector2.length; i++ ) {
+			vector2[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el valor " + ( i + 1)));
+			ordenar.metodoInserccion(vector2, i + 1);
+		}*/
+		
+		ordenar.metodoShell(vector);
+		
+	}
+
+}

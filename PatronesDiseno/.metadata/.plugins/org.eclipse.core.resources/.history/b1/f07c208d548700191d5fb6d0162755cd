@@ -1,0 +1,22 @@
+package implementacion;
+
+import interfaces.ServicioInformatico;
+
+public class ServicioWebSite implements ServicioInformatico {
+
+	@Override
+	public void asignarTrabajo() {
+		System.out.println("El personal encargado de desarrollo web ha aceptado el trabajo");
+	}
+
+	@Override
+	public void indicarFechaEntrega() {
+		System.out.println("");
+	}
+
+	@Override
+	public void informarSobrePago() {
+		System.out.println("");
+	}
+
+}

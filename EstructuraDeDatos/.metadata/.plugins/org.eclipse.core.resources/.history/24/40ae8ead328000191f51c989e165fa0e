@@ -1,0 +1,25 @@
+public class AlgoritmosDeOrdenamiento {
+	int elementoTemporal;
+	
+	// Método burbuja
+	public void metodoBurbuja( int[] arreglo ) {
+		for( int i = 0; i < arreglo.length; i++ ) {
+			for( int j = 0; j < arreglo.length; j++ ) {
+				if( arreglo[i] > arreglo[j] ) {
+					elementoTemporal = arreglo[i];
+					arreglo[i] = arreglo[j];
+					arreglo[j] = elementoTemporal;
+				}
+			}
+		}
+	}
+	
+	// Mostrar los arreglos del vector
+	public void mostrarArreglo( int[] arreglo ) {
+		for( int i = 0;  i < arreglo.length; i++ ) {
+			System.out.print("[" + arreglo[i] + "] ==> ");
+		}
+		
+		System.out.println();
+	}
+}

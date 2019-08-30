@@ -1,0 +1,8 @@
+package fabricas;
+import interfaces.ServicioFactory;
+import interfaces.ServicioInformatico;
+import implementacion.ServicioSoftware;;
+
+public class SoftwareFactory implements ServicioFactory {
+
+}

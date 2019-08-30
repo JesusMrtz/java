@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="implementacion.ServicioWebSite"/>
+    <fullyQualifiedTypeName name="implementacion.ServicioDesing"/>
+    <fullyQualifiedTypeName name="implementacion.ServicioSoftware"/>
+    <fullyQualifiedTypeName name="interfaces.ServicioFactory"/>
+    <fullyQualifiedTypeName name="interfaces.ServicioInformatico"/>
+    <fullyQualifiedTypeName name="fabricas.WebSiteFactory"/>
+    <fullyQualifiedTypeName name="fabricas.SoftwareFactory"/>
+    <fullyQualifiedTypeName name="fabricas.DesignFactory"/>
+    <fullyQualifiedTypeName name="api.AvionApi"/>
+    <fullyQualifiedTypeName name="api.HotelApi"/>
+    <fullyQualifiedTypeName name="fascade.CheckFacade"/>
+</qualifiedTypeNameHistroy>

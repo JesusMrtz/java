@@ -1,0 +1,10 @@
+public class Principal {
+
+	public static void main(String[] args) {
+		Persona uno = new Persona("Jesus");
+		
+		System.out.println("El nombre del objeto 1 es: ");
+		System.out.println(uno.getNombre());
+	}
+
+}

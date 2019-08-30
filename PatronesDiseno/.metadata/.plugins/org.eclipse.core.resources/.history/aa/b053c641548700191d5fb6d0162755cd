@@ -1,0 +1,24 @@
+package implementacion;
+
+import interfaces.ServicioInformatico;
+
+public class ServicioDesing implements ServicioInformatico {
+
+	@Override
+	public void asignarTrabajo() {
+		System.out.println("El trabajo se le ha entregado a los diseñadores gráficos disponible");
+	}
+
+	@Override
+	public void indicarFechaEntrega() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void informarSobrePago() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

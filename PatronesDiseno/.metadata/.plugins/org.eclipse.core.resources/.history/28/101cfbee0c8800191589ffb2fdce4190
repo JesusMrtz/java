@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Principal {
+	private static Scanner entrada;
+	public static void main(String[] args) {
+		Circulo circulo = new Circulo();
+		Cuadrado cuadrado = new Cuadrado();
+		
+		circulo.setNombre("Mi circulo");
+		circulo.mover(12, 34);
+		
+		cuadrado.setNombre("Mi cuadrado");
+		cuadrado.mover(200, 200);
+		
+		System.out.println("Estas son las figuras originales: ");
+		System.out.println("Circulo: " + circulo.getNombre());
+		circulo.getPosition();
+		System.out.println("Cuadrado: " + cuadrado.getNombre());
+		cuadrado.getPosition();
+		/*Persona uno = new Persona("Jesus");
+		
+		System.out.println("El nombre del objeto 1 es: ");
+		System.out.println(uno.getNombre());
+		
+		Persona dos = new Persona("");
+		dos = uno;
+		
+		dos.setNombre("Karely");
+		System.out.println("El nombre dle objeto 2");
+		System.out.println(dos.getNombre());
+		System.out.println(uno.getNombre());*/
+	}
+
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/jmartinez/Desktop/Escritorio/Codes 2/Lenguages/Java/PatronesDiseno/.metadata/.plugins/org.eclipse.jdt.core
+1917919673.index
+2048152730.index

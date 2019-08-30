@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/jmartinez/Desktop/Escritorio/Codes 2/Lenguages/Java/EstructuraDeDatos/.metadata/.plugins/org.eclipse.jdt.core
+2048152730.index
+3420974837.index

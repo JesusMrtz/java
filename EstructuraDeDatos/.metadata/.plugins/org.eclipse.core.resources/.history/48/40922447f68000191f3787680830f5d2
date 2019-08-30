@@ -1,0 +1,50 @@
+public class AlgoritmosDeOrdenamiento {
+	int elementoTemporal;
+	
+	// Método burbuja
+	public void metodoBurbuja( int[] arreglo ) {
+		for( int i = 0; i < arreglo.length; i++ ) {
+			for( int j = i + 1; j < arreglo.length; j++ ) {
+				if( arreglo[i] > arreglo[j] ) {
+					elementoTemporal = arreglo[i];
+					arreglo[i] = arreglo[j];
+					arreglo[j] = elementoTemporal;
+				}
+			}
+		}
+	}
+	
+	// Metodo radix
+	public void metodoRadix( int[] arreglo ) {
+		int j;
+		for( int x = Integer.SIZE - 1; x >= 0; x-- ) {
+			int auxiliar[] = new int[arreglo.length];
+			j = 0;
+			for( int i = 0; i < arreglo.length; i++ ) {
+				boolean mover = arreglo[i] << x >= 0;
+				if( x== 0 ? !mover: mover ) {
+					auxiliar[j] = arreglo[i];
+					j++;
+				} else {
+					arreglo[i-j] = arreglo[i];
+				}
+			}
+			
+			for( int i = j; i < auxiliar.length; i++ ) {
+				auxiliar[i] = arreglo[i - j];
+			}
+			arreglo = auxiliar;
+		}
+		System.out.println("Arreglo ordenado por el método Radix:");
+		mostrarArreglo(arreglo);
+	}
+	
+	// Mostrar los arreglos del vector
+	public void mostrarArreglo( int[] arreglo ) {
+		for( int i = 0;  i < arreglo.length; i++ ) {
+			System.out.print("[" + arreglo[i] + "] ==> ");
+		}
+		
+		System.out.println();
+	}
+}

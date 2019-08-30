@@ -1,0 +1,15 @@
+public class Principal {
+
+	public static void main(String[] args) {
+		AlgoritmosDeOrdenamiento ordenar = new AlgoritmosDeOrdenamiento();
+		int vector[] = {1000, 5, 6 ,3, 221 44, 1, 22, 100212	};
+		
+		System.out.println("Los datos sin ordenamiento: ");
+		ordenar.mostrarArreglo(vector);
+		System.out.println("Arreglo ordenado con el método de burbuja:");
+		ordenar.metodoBurbuja(vector);
+		ordenar.mostrarArreglo(vector);
+		ordenar.metodoRadix(vector);
+	}
+
+}

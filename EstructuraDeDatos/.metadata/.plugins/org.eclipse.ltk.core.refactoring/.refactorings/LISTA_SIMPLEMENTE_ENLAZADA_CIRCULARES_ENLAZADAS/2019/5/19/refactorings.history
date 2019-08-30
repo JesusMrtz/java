@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;NODOLC&apos; to &apos;NodoLC&apos;&#x0A;- Original project: &apos;LISTA_SIMPLEMENTE_ENLAZADA_CIRCULARES_ENLAZADAS&apos;&#x0A;- Original element: &apos;NODOLC&apos;&#x0A;- Renamed element: &apos;NodoLC&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NODOLC&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{NODOLC.java[NODOLC" matchStrategy="1" name="NodoLC" qualified="false" references="true" similarDeclarations="false" stamp="1557288944790" textual="false" version="1.0"/>
+</session>

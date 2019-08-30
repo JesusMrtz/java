@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Nodos&apos; to &apos;NodoDoble&apos;&#x0A;- Original project: &apos;LISTA_DOBLEMENTE_ENLAZADA&apos;&#x0A;- Original element: &apos;Nodos&apos;&#x0A;- Renamed element: &apos;NodoDoble&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Nodos&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Nodos.java[Nodos" matchStrategy="1" name="NodoDoble" qualified="false" references="true" similarDeclarations="false" stamp="1557276700609" textual="false" version="1.0"/>
+</session>
